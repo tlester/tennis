@@ -60,8 +60,8 @@ approached the exercise iteratively.
 ## Feature: Game scoring
 
 ### Scenario Outline:  Player scores
-Given The current score is <player1score> to <player2score> When The system receives <scoreEvent>
-Then The system outputs <result>
+Given The current score is \<player1score\> to \<player2score\> When The system
+receives \<scoreEvent\> Then The system outputs \<result\>:
 
 Examples:
 | player1score | player2score | scoreEvent | result |
@@ -71,6 +71,6 @@ Examples:
 | Love | Love | Player 2 scores! | Love-Fiftee |
 | Forty | Thirty | Player 2 scores! |  Deuce! |
 | Forty | Forty | Player 1 scores! | Advantage Player 1! |
-| Advantage | | Player 1 scores! | Player 1 wins the game |
-| Advantage | | PLayer 2 scores! | Deuce! |
+| Advantage | -- | Player 1 scores! | Player 1 wins the game |
+| Advantage | -- | PLayer 2 scores! | Deuce! |
 
